@@ -14,15 +14,35 @@ Components.App = React.createClass({
         };
     },
 
-    render: function () {
-        return (
-            <AppCanvas>
-                <AppBar title="Title goes here"/>
+    getInitialState() {
+        return {siteTitle: Meteor.settings.public.siteTitle};
+    },
 
-                <div style={{padding: '80px'}}>
-                    {this.props.content}
-                </div>
-            </AppCanvas>
+    render() {
+        let titleTemplate = this.state.siteTitle + " - %s";
+        return (
+            <div className="app">
+                <ReactHelmet
+                    title="Page title"
+                    titleTemplate={titleTemplate}
+                    base={{"target": "_blank", "href": "http://mysite.com/"}}
+                    meta={[
+                        {"name": "description", "content": "Music recommendations site"},
+                        {"name": "viewport", "content": "width=device-width, initial-scale=1"},
+                    ]}
+                    link={[
+                        {"rel": "stylesheet", "href": "https://fonts.googleapis.com/icon?family=Material+Icons"},
+                        {"rel": "stylesheet", "media": "all", "href": "http://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin", },
+                    ]}
+                />
+                <AppCanvas>
+                    <AppBar title="Title goes here"/>
+
+                    <div style={{paddingTop: '80px'}}>
+                        {this.props.yield}
+                    </div>
+                </AppCanvas>
+            </div>
         );
     }
 });

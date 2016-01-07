@@ -22,3 +22,5 @@ aldeed:collection2
 aldeed:simple-schema
 kadira:flow-router
 kadira:react-layout
+nfl:react-helmet
+tmikeladze:react-swipeable-views
