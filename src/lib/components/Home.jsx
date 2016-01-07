@@ -1,4 +1,4 @@
-const { Tabs, Tab, Slider } = MUI;
+const { Tabs, Tab } = MUI;
 
 const styles = {
     slide: {
