@@ -1,6 +1,6 @@
 injectTapEventPlugin();
 
-const { AppCanvas, AppBar, Styles } = MUI;
+const { AppCanvas, Styles } = MUI;
 const { ThemeManager, LightRawTheme } = Styles;
 
 Components.App = React.createClass({
@@ -36,9 +36,9 @@ Components.App = React.createClass({
                     ]}
                 />
                 <AppCanvas>
-                    <AppBar title="Title goes here"/>
+                    <Components.AppBar title="Test"/>
 
-                    <div style={{paddingTop: '80px'}}>
+                    <div style={{paddingTop: '20px'}}>
                         {this.props.yield}
                     </div>
                 </AppCanvas>
