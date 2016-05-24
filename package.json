@@ -1,0 +1,20 @@
+{
+  "name": "music-recommendations",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "An app and guide showcasing how to build a music recommendation site using Apollo",
+  "main": "index.js",
+  "scripts": {
+    "start": "meteor run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimMikeladze/music-recommendations.git"
+  },
+  "author": "Tim Mikeladze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimMikeladze/music-recommendations/issues"
+  },
+  "homepage": "https://github.com/TimMikeladze/music-recommendations#readme"
+}
