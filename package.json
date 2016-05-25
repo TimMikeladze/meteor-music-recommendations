@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/TimMikeladze/music-recommendations#readme",
   "dependencies": {
+    "apollo-client": "^0.3.12",
     "react": "^15.1.0",
+    "react-apollo": "^0.3.5",
     "react-dom": "^15.1.0",
     "react-helmet": "^3.1.0",
     "react-router": "^2.4.1",
@@ -35,6 +37,7 @@
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-meteor": "^3.5.2",
     "eslint-plugin-react": "^5.1.1"
   },
   "eslintConfig": {
@@ -44,10 +47,22 @@
       "sourceType": "module"
     },
     "plugins": [
+      "meteor",
       "react"
     ],
     "extends": [
-      "airbnb"
-    ]
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "^meteor/"
+          ]
+        }
+      ]
+    }
   }
 }
