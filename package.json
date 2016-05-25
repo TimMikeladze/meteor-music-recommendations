@@ -16,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/TimMikeladze/music-recommendations/issues"
   },
-  "homepage": "https://github.com/TimMikeladze/music-recommendations#readme"
+  "homepage": "https://github.com/TimMikeladze/music-recommendations#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-helmet": "^3.1.0",
+    "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.4",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1"
+  }
 }
