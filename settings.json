@@ -1,5 +1,6 @@
 {
   "public": {
-    "title": "Apollo boilerplate"
-  }
+    "TITLE": "Apollo boilerplate",
+    "GRAPHQL_PORT": 4000
+  },
 }

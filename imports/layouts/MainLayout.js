@@ -7,7 +7,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 // Read about it here: https://github.com/zilverline/react-tap-event-plugin
 injectTapEventPlugin();
 
-const title = Meteor.settings.public.title || 'Title';
+const title = Meteor.settings.public.TITLE || 'Title';
 
 const MainLayout = ({ children }) => (
   <div className="main-layout">
